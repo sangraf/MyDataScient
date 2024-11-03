@@ -6,4 +6,5 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 import scipy.stats as stats
 data=pd.read_csv('C:\\Users\\User\\source\\repos\\MyDataScient\\possum.csv')
-print(data)
+print(data.isnull().values.any())
+data=data.dropna()
